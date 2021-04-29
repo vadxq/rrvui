@@ -1,0 +1,18 @@
+{
+  "nav": [
+    {
+      "name": "布局组件",
+      "packages": [
+        {
+          "name": "Layout",
+          "sort": 1,
+          "cName": "布局",
+          "type": "component",
+          "show": true,
+          "desc": "布局组件Layout",
+          "author": "vadxq"
+        }
+      ]
+    }
+  ]
+}
