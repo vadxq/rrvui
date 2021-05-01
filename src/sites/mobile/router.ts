@@ -3,7 +3,7 @@ import Index from './components/Index.vue';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: '/',
+    name: 'mobile',
     component: Index
   }
 ];

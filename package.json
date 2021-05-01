@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc --noEmit && vite build --config vite.config.build.ts",
     "serve": "vite preview",
     "log": "npx conventional-changelog --config ./node_modules/@commitlint/cli -i CHANGELOG.md -s -r 0",
     "prepare": "husky install",
@@ -83,7 +83,7 @@
   "lint-staged": {
     "*.md": "prettier -w",
     "*.{ts,tsx,js,vue}": "eslint --fix",
-    "*.{css,scss,less,sass}": "stylelint --fix",
+    "*.{vue,css,scss,less,sass}": "stylelint --fix",
     "*": "prettier -w -u"
   }
 }
