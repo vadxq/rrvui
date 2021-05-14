@@ -41,7 +41,7 @@ export default defineComponent({
 .index {
   height: 100%;
   width: 100%;
-  padding-top: 30px;
+  padding-top: 50px;
 
   &-header {
     display: flex;
@@ -73,10 +73,11 @@ export default defineComponent({
     background: #f7f8fa;
     border-radius: 30px 30px 0 0;
     overflow: hidden;
-    padding: 30px 25px;
 
     > ol {
+      margin: 24px;
       margin-bottom: 17px;
+      padding: 0;
 
       > li {
         line-height: 20px;
@@ -86,11 +87,13 @@ export default defineComponent({
       }
 
       > ul {
+        padding: 0;
+        margin: 0;
+
         li {
           display: flex;
           align-items: center;
           padding: 0 24px;
-          width: 100%;
           height: 45px;
           line-height: 45px;
           background: rgba(255, 255, 255, 1);

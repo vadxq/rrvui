@@ -1,5 +1,8 @@
 <template>
-  <div class="doc-header"></div>
+  <div class="doc-header">
+    <span>RRVUI </span>
+    组件库
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
@@ -24,7 +27,17 @@ export default defineComponent({
     line-height: 32px;
     text-align: left;
     padding: 0 50px;
-    font-size: 20px;
+    font-size: $font-size-sub;
+    color: $primary-color;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: $bg-module-color;
+
+    span {
+      margin-left: 20px;
+      font-size: $font-size-main;
+    }
   }
 }
 </style>

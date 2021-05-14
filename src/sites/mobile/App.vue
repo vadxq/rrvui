@@ -1,7 +1,7 @@
 <template>
   <div v-if="title != '/'" id="nav">
     <div class="back" @click="goBack">
-      <span name="left">back</span>
+      <span name="left">&lt;</span>
     </div>
     {{ title }}
   </div>
@@ -53,6 +53,7 @@ export default defineComponent({
     z-index: 10;
     left: 0;
     right: 0;
+    top: 0;
     height: 57px;
     line-height: 57px;
     text-align: center;
@@ -60,7 +61,8 @@ export default defineComponent({
     font-weight: bold;
     font-size: 20px;
     color: rgba(51, 51, 51, 1);
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.07);
+
     .back {
       position: absolute;
       left: 0;
@@ -80,8 +82,18 @@ export default defineComponent({
     overflow-y: auto;
     padding: 57px 17px 0 17px;
 
+    > h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: rgba(144, 156, 164, 1);
+      padding: 0 10px;
+      font-weight: normal;
+    }
+
     &.full {
       padding: 57px 0 0 0;
+
       h2 {
         padding-left: 17px;
       }
@@ -95,14 +107,7 @@ export default defineComponent({
       width: 0;
       background: transparent;
     }
-    > h2 {
-      margin-top: 30px;
-      margin-bottom: 10px;
-      font-size: 14px;
-      color: rgba(144, 156, 164, 1);
-      padding: 0 10px;
-      font-weight: normal;
-    }
+
     > p {
       font-size: 12px;
     }

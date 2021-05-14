@@ -20,7 +20,7 @@ export default defineComponent({
     width: 375px;
     position: fixed;
     right: 30px;
-    top: 100px;
+    top: 76px;
     box-shadow: #ebedf0 0 4px 12px;
     border-radius: 12px;
     overflow: hidden;

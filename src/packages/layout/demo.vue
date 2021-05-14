@@ -135,21 +135,26 @@ export default createDemo({
   margin-bottom: 20px;
   padding: 20px 0;
 }
+
 .demo .rrv-row {
   overflow: hidden;
+
   &:not(:last-child) .rrv-col {
     margin-bottom: 15px;
   }
 }
+
 .flex-content {
   line-height: 40px;
   color: $title-color;
   text-align: center;
   border-radius: 6px;
   background: $primary-color;
+
   &.flex-content-light {
-    background: $primary-color-end;
+    background: $bg-color;
   }
+
   &.flex-content-height {
     height: 50px;
   }

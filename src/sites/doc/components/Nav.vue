@@ -22,7 +22,7 @@ export default defineComponent({
   name: 'doc-nav',
   setup() {
     onMounted(() => {
-      console.log('123' + nav);
+      console.log('123' + JSON.stringify(nav));
     });
     return {
       nav: reactive(nav)
@@ -35,44 +35,30 @@ export default defineComponent({
 .doc {
   &-nav {
     position: fixed;
-    top: 120px;
+    top: 60px;
     left: 0;
     bottom: 0;
     z-index: 1;
     background: $white;
-    width: 290px;
+    width: 180px;
     border-right: 1px solid #eee;
     overflow: auto;
-    padding-left: 35px;
+    // padding-left: 10px;
 
     ol {
+      margin: 16px;
+
       li {
-        height: 48px;
-        line-height: 48px;
+        height: 32px;
         font-size: 14px;
         font-weight: bold;
         position: relative;
-
-        &.active {
-          &::before {
-            position: absolute;
-            content: '';
-            left: 0;
-            top: 50%;
-            width: 22px;
-            margin-top: -5px;
-            height: 10px;
-            transform: rotate(90deg);
-            background: url(https://img10.360buyimg.com/imagetools/jfs/t1/136135/19/14659/946/5fa20aa8E33a9aa26/d329fbe669171208.png)
-              no-repeat;
-            background-size: 100% 100%;
-          }
-        }
       }
 
       > ul {
+        margin-left: 12px;
+
         li {
-          padding-left: 29px;
           cursor: pointer;
 
           a {

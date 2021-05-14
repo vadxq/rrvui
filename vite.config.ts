@@ -12,7 +12,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/styles/variables.scss";`
+        additionalData: `@import "@/styles/variables.scss";@import "@/sites/styles/reset.scss";@import "@/sites/styles/md-style.scss";`
       }
     }
   },
@@ -31,8 +31,8 @@ export default defineConfig({
     cssCodeSplit: true,
     rollupOptions: {
       input: {
-        mobile: resolve(__dirname, 'mobile.html')
-        // doc: resolve(__dirname, 'index.html')
+        mobile: resolve(__dirname, 'mobile.html'),
+        doc: resolve(__dirname, 'index.html')
       }
     }
   }

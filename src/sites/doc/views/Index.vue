@@ -49,6 +49,7 @@ export default defineComponent({
     });
 
     onBeforeRouteUpdate((to) => {
+      console.log('onBeforeRouteUpdate', to);
       watchDemoUrl(to);
     });
 
@@ -60,12 +61,14 @@ export default defineComponent({
 <style lang="scss" scoped>
 .doc {
   &-content {
-    margin-left: 290px;
+    margin-left: 180px;
+    // margin-right: 400px;
     display: flex;
     flex-direction: column;
 
     &-document {
       min-height: 800px;
+      margin: 16px;
     }
   }
 }

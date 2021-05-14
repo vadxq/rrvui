@@ -1,5 +1,5 @@
 import { App, defineComponent, ComponentOptions } from 'vue';
-export function createComponent(name: string) {
+export const createComponent = (name: string) => {
   const componentName = 'rrv-' + name;
   return {
     componentName,
@@ -21,4 +21,4 @@ export function createComponent(name: string) {
       return defineComponent(_component);
     } as typeof defineComponent
   };
-}
+};

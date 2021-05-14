@@ -1,25 +1,69 @@
 // color
-
 // 主色调
-$primary-color: #ffeb3b !default;
-$primary-color-end: #fff59d !default;
+$primary-color: #1890ff !default;
 // 辅助色
-$help-color: #fffde7 !default;
-// 标题常规文字
-$title-color: #1a1a1a !default;
-// 副标题
-$title-color2: #666666 !default;
-// 次内容
-$text-color: #808080 !default;
-// 特殊禁用色
-$disable-color: #cccccc !default;
+$help-new-color: #0bf !default; // 新手引导
+$help-board-color: #fb4273 !default; // 排行榜1
+$help-board-color-2: #fe8155 !default; // 排行榜2
+$help-board-color-3: #fcb80a !default; // 排行榜3
+$help-board-color-4: #7a97ad !default; // 排行榜4
+$help-vip-color: #dbb258 !default; // vip（购买高亮）
+$help-vip-color-2: #b68540 !default; // vip
+$help-vip-color-3: #87530c !default; // vip
+$help-assist-color: #85888f !default; // 辅助文案
+$help-bar-text-color: #9ca5b5 !default; // 底部bar文案
+$help-black-color: #e5e7e8 !default; // 暗黑文案
+$help-bg-color: #f6f8fa !default; // 背景1
+$help-bg-color-2: #1f2126 !default; // 背景2
+$help-bar-color: #fff !default; // 底部bar1
+$help-bar-color-2: #292b31 !default; // 底部bar2
+$help-dialog-bg-color: rgba(0, 0, 0, 0.6) !default; // 透明色（弹窗背景）
+$help-title-color: #222 !default; // 标题文案
+$help-success-color: #1fcc39 !default; // 成功通过
+$help-fail-color: #ff617b !default; // 强提示/报错
+
+// 字体颜色
+$title-color: #222 !default; // 字体色
+$text-color: #85888f !default; // 次级字体色
+$tabbar-color: #9ca5b5 !default; // tabbar字体色
+$disable-color: #dadbdc !default; // 不可点击字体色
+
+// 线颜色
+$line-color: #e6e7e8 !default; // 分割线
+$line-color2: #cacbcc !default; // 分割线：弹窗等功能按钮
+
+// 背景颜色
+$bg-color: #f6f8fa !default; // 页面背景色
+$bg-module-color: #fff !default; // 模块背景色
+$bg-placeholder-color: #e9ebed !default; // 占位背景色
+$bg-input-color: #f2f4f5 !default; // 输入框背景色
+$bg-card-color: #f6f8fa !default; // 卡片背景色
+
+// 按钮颜色
+$button-color: linear-gradient(
+  90deg,
+  #0bf,
+  #1890ff
+) !default; // 一级按钮-可点击
+$button-vip-color: linear-gradient(
+  90deg,
+  #fbf5eb,
+  #f7e2c3
+) !default; // 一级按钮-会员-可点击
+$button-disable-color: linear-gradient(
+  90deg,
+  #dadbdc,
+  #cacbcc
+) !default; // 一级按钮-不可点击
+$button-color-2: #1890ff !default; // 二级按钮-可点击
+$button-disable-color-2: #dadbdc !default; // 二级按钮-不可点击
+$button-color-3: #85888f !default; // 三级按钮-可点击
+$button-disable-color-3: #1890ff !default; // 三级按钮-不可点击
+
 $white: #fff;
 $black: #000;
 
-// padding
-$padding-xs: 12px;
-
-$font-family: PingFang SC, Microsoft YaHei, Helvetica, Hiragino Sans GB, SimSun,
+$font-family: pingfang sc, microsoft yahei, helvetica, hiragino sans gb, simsun,
   sans-serif !default;
 
 // ---- Animation ----
@@ -27,18 +71,34 @@ $animation-duration: 0.25s !default;
 $animation-timing-fun: cubic-bezier(0.55, 0.085, 0.68, 0.53) !default;
 
 // Font
-$font-size-0: 10px;
-$font-size-1: 12px;
-$font-size-2: 14px;
-$font-size-3: 16px;
-$font-size-4: 18px;
-$font-weight-bold: 400;
+$font-size: 48px; // 一级标题（结果页大标题
+$font-size-2: 40px; // 二级标题（页面栏目标题
+$font-size-3: 34px; // 三级标题（导航栏标题
+$font-size-main: 28px; // 主要内容
+$font-size-sub: 24px; // 摘要、次要信息
+$font-size-tip: 20px; // 标签 提示性文案
+$font-size-number: 34px; // 数字字号
 
-$font-size-small: $font-size-1;
-$font-size-base: $font-size-2;
-$font-size-large: $font-size-3;
-$line-height-base: 1.5 !default;
+$font-weight-bold: 400; // 粗体
+
+$line-height-base: 1.2 !default; // 单行
+$line-height-para: 1.2 !default; // 段落
 
 view-block {
   display: block;
 }
+
+// padding
+$padding: 32px; // 页面留空
+$padding-xs: 12px;
+
+// header height
+$padding-top-header: 104px;
+$padding-top-bar: constant(safe-area-inset-top);
+$padding-top-bar: env(safe-area-inset-top);
+
+// 100%宽度
+$width: 750px;
+
+// border raduis
+$border-raduis: 16px;

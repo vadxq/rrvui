@@ -1,7 +1,7 @@
 import { App } from 'vue';
 import Layout from './packages/layout/index.vue';
 
-function install(app: App) {
+function install(app: App): void {
   const packages = [Layout];
   packages.forEach((item: any) => {
     if (item.install) {
